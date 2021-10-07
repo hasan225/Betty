@@ -9,7 +9,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{background: #020041;}
+body {
+    background: #020041;
+}
+
 .nav-left img {
     width: 50px;
 }
@@ -48,52 +51,64 @@ body{background: #020041;}
     color: white;
     font-weight: 600;
 }
+
 .nav-right {
     border: 2px solid transparent;
-    background-image: linear-gradient(#030542, #02003f),radial-gradient(circle at top left, #Fb5200, #00e5ff);
+    background-image: linear-gradient(#030542, #02003f), radial-gradient(circle at top left, #Fb5200, #00e5ff);
     border-radius: 45px;
     background-origin: border-box;
-    background-clip: content-box,border-box;
+    background-clip: content-box, border-box;
 }
+
 .nav-right a {
     color: white;
 }
+
 .nav-right a span {
     display: block;
     padding: 6px 35px;
 }
+
 .contents-right img {
-    width: 550px;
+    max-width: 550px;
 }
+.contents-left {
+    margin-right: 20px;
+}
+
 .contents {
     display: flex;
     justify-content: space-around;
     margin-top: 70px;
     align-items: center;
 }
+
 .contents-left h1 {
     font-size: 50px;
     line-height: 60px;
     color: white;
 }
+
 .contents-left p {
     max-width: 650px;
     color: #a5a5a5;
     margin: 30px 0;
 }
+
 .play-button {
-        display: inline-flex;
-            height: 50px;
+    display: inline-flex;
+    height: 50px;
     width: 50px;
-        border: 2px solid transparent;
-    background-image: linear-gradient(#030542, #02003f),radial-gradient(circle at top left, #Fb5200, #00e5ff);
+    border: 2px solid transparent;
+    background-image: linear-gradient(#030542, #02003f), radial-gradient(circle at top left, #Fb5200, #00e5ff);
     border-radius: 45px;
     background-origin: border-box;
-    background-clip: content-box,border-box;
+    background-clip: content-box, border-box;
     margin-right: 20px;
     position: relative;
-    
+
 }
+
 .play-button i {
     position: absolute;
     top: 26%;
@@ -102,6 +117,7 @@ body{background: #020041;}
     font-size: 23px;
     color: white;
 }
+
 .Learn-more {
     display: flex;
     align-items: center;
@@ -111,6 +127,7 @@ body{background: #020041;}
     color: #03a9f4;
     font-weight: 500;
 }
+
 .widgets {
     DISPLAY: flex;
     align-items: center;
@@ -131,59 +148,70 @@ body{background: #020041;}
 
 .widgets {
     background: linear-gradient(45deg, #000f61, #4b18ff);
-    width: 41%;
+    max-width: 700px;
     border-radius: 2px;
 }
 
 /* animations-------- */
 
 .play-button {
-    animation:play 5s linear infinite;
+    animation: play 5s linear infinite;
 
 }
 
-@keyframes play{
-    0%{
+@keyframes play {
+    0% {
         transform: rotate(0deg);
     }
-    30%{
+
+    30% {
         transform: rotate(180deg);
     }
-    50%{
+
+    50% {
         transform: rotate(220deg);
     }
-    70%{
+
+    70% {
         transform: rotate(280deg);
     }
-    90%{
+
+    90% {
         transform: rotate(360deg);
     }
-       100%{
+
+    100% {
         transform: rotate(0deg);
     }
 }
 
-.contents-right{
-    animation:content 5s linear infinite;
+.contents-right {
+    animation: content 5s linear infinite;
 }
+
 @keyframes content {
-        0%{
-      box-shadow: 11px 3px 16px -24px white;
+    0% {
+        box-shadow: 11px 3px 16px -24px white;
     }
-    30%{
-          box-shadow: 11px 3px 30px -20px white;
+
+    30% {
+        box-shadow: 11px 3px 30px -20px white;
     }
-    50%{
-       box-shadow: 11px 3px 45px -16px white;
+
+    50% {
+        box-shadow: 11px 3px 45px -16px white;
     }
-    70%{
-         box-shadow: 11px 3px 60px -10px white;
+
+    70% {
+        box-shadow: 11px 3px 60px -10px white;
     }
-    90%{
-      box-shadow: 11px 3px 70px -5px white;
+
+    90% {
+        box-shadow: 11px 3px 70px -5px white;
     }
-       100%{
-       box-shadow: 11px 3px 16px -24px white;
+
+    100% {
+        box-shadow: 11px 3px 16px -24px white;
     }
 }
 
@@ -192,51 +220,92 @@ body{background: #020041;}
 }
 
 @keyframes logo {
-        0%{
-     transform: rotate3d(1, 1, 1, 0deg);
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
     }
-    30%{
-         transform:  rotate3d(1, 1, 1, 80deg);
+
+    30% {
+        transform: rotate3d(1, 1, 1, 80deg);
     }
-    50%{
-       transform: rotate3d(1, 1, 1, 160deg);
+
+    50% {
+        transform: rotate3d(1, 1, 1, 160deg);
     }
-    70%{
-        transform:  rotate3d(1, 1, 1, 240deg);
+
+    70% {
+        transform: rotate3d(1, 1, 1, 240deg);
     }
-    90%{
-      transform: rotate3d(1, 1, 1, 360deg);
+
+    90% {
+        transform: rotate3d(1, 1, 1, 360deg);
     }
-       100%{
-      transform:rotate3d(1, 1, 1, 0deg);
+
+    100% {
+        transform: rotate3d(1, 1, 1, 0deg);
     }
 }
 
 .contents-left h1 {
- animation: hero 30s linear infinite;}
+    animation: hero 30s linear infinite;
+}
 
- @keyframes hero {
-        0%{
-    transform: rotateY(0deg);
+@keyframes hero {
+    0% {
+        transform: rotateY(0deg);
     }
-    30%{
+
+    30% {
         transform: rotateY(20deg);
     }
-    50%{
-       transform: rotateY(30deg);
+
+    50% {
+        transform: rotateY(30deg);
     }
-    70%{
-       transform: rotateY(60deg);
+
+    70% {
+        transform: rotateY(60deg);
     }
-    90%{
-      transform: rotate3d(20);
+
+    90% {
+        transform: rotate3d(20);
     }
-       100%{
-      transform: rotateY(0deg);
+
+    100% {
+        transform: rotateY(0deg);
     }
 }
 
+.widgets {
+    background: linear-gradient(
+45deg, #000f61, #4b18ff);
+    animation: widget 10s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
+@keyframes widget {
+    0% {
+        background: linear-gradient(45deg, #000f61, #4b18ff);
+    }
 
+    30% {
+        background: linear-gradient(80deg, #000f61, #4b18ff);
+    }
 
+    50% {
+        background: linear-gradient(160deg, #000f61, #4b18ff);
+    }
 
+    70% {
+       background: linear-gradient(220deg, #000f61, #4b18ff);
+    }
+
+    90% {
+   background: linear-gradient(45deg, #000f61, #4b18ff);
+    }
+
+    100% {
+      background: linear-gradient(360deg, #000f61, #4b18ff);
+    }
+}

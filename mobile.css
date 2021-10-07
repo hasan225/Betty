@@ -1,0 +1,14 @@
+.contents-left h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+.contents-left p {
+    max-width: 460px;
+    font-size: 14px;
+}
+.contents-right img {
+    max-width: 350px;
+}
+.contents {
+    margin-top: 100px;
+}
